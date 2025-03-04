@@ -11,3 +11,6 @@
                 .collectList()
                 .map(customers -> new ApiResponse<>("ok", customers, 200));
     }*/
+
+SWAGGER
+http://localhost:9001/swagger-ui/index.html

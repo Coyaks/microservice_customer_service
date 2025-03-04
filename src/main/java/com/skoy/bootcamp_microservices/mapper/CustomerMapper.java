@@ -1,14 +1,14 @@
 package com.skoy.bootcamp_microservices.mapper;
 
-import com.skoy.bootcamp_microservices.dto.CustomerDto;
+import com.skoy.bootcamp_microservices.dto.CustomerDTO;
 import com.skoy.bootcamp_microservices.model.Customer;
 
 import java.time.LocalDateTime;
 
 public class CustomerMapper {
 
-    public static CustomerDto toDto(Customer customer) {
-        return new CustomerDto(
+    public static CustomerDTO toDto(Customer customer) {
+        return new CustomerDTO(
                 customer.getId(),
                 customer.getCustomerType(),
                 customer.getName(),
@@ -20,7 +20,7 @@ public class CustomerMapper {
         );
     }
 
-    public static Customer toEntity(CustomerDto dto) {
+    public static Customer toEntity(CustomerDTO dto) {
         return new Customer(
                 dto.getId(),
                 dto.getCustomerType(),

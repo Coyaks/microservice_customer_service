@@ -1,5 +1,7 @@
 package com.skoy.bootcamp_microservices.model;
 
+import com.skoy.bootcamp_microservices.enums.CustomerTypeEnum;
+import com.skoy.bootcamp_microservices.enums.DocumentTypeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,10 +17,10 @@ import java.time.LocalDateTime;
 public class Customer {
     @Id
     private String id;
-    private String customerType; // PERSONAL | EMPRESARIAL
+    private CustomerTypeEnum customerType; // PERSONAL | EMPRESARIAL
     private String name;
     private String surname;
-    private String documentType; // DNI | RUC
+    private DocumentTypeEnum documentType; // DNI | RUC
     private String documentNumber;
     private String email;
     private String phone;

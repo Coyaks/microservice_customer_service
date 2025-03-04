@@ -1,6 +1,6 @@
 package com.skoy.bootcamp_microservices.service;
 
-import com.skoy.bootcamp_microservices.dto.CustomerDto;
+import com.skoy.bootcamp_microservices.dto.CustomerDTO;
 import com.skoy.bootcamp_microservices.mapper.CustomerMapper;
 import com.skoy.bootcamp_microservices.model.Customer;
 import com.skoy.bootcamp_microservices.repository.ICustomerRepository;
@@ -18,28 +18,28 @@ public class CustomerService implements ICustomerService {
     private final ICustomerRepository customerRepository;
 
     @Override
-    public Mono<CustomerDto> create(CustomerDto customerDto) {
+    public Mono<CustomerDTO> create(CustomerDTO customerDto) {
         Customer customer = CustomerMapper.toEntity(customerDto);
         return customerRepository.save(customer).map(CustomerMapper::toDto);
     }
 
     @Override
-    public Mono<CustomerDto> findById(String id) {
+    public Mono<CustomerDTO> findById(String id) {
         return customerRepository.findById(id).map(CustomerMapper::toDto);
     }
 
     @Override
-    public Mono<CustomerDto> findByDocument(String documentNumber) {
+    public Mono<CustomerDTO> findByDocument(String documentNumber) {
         return customerRepository.findByDocumentNumber(documentNumber).map(CustomerMapper::toDto);
     }
 
     @Override
-    public Flux<CustomerDto> FindAll() {
+    public Flux<CustomerDTO> findAll() {
         return customerRepository.findAll().map(CustomerMapper::toDto);
     }
 
     @Override
-    public Mono<CustomerDto> update(String id, CustomerDto customerDto) {
+    public Mono<CustomerDTO> update(String id, CustomerDTO customerDto) {
         return customerRepository.findById(id)
                 .flatMap(existingCustomer -> {
                     existingCustomer.setName(customerDto.getName());

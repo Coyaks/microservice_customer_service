@@ -1,0 +1,498 @@
+2025-02-26 01:14:01 [http-nio-9001-exec-2] INFO  c.s.b.controller.CustomerController - Fetching all customers
+2025-02-26 01:14:01 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 01:14:01 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 01:14:01 [Thread-15] INFO  c.s.b.controller.CustomerController - All customers fetched successfully.
+2025-02-26 01:15:19 [http-nio-9001-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.skoy.bootcamp_microservices.enums.CustomerTypeEnum` from String "PERSONAL1": not one of the values accepted for Enum class: [PERSONAL, EMPRESARIAL]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.skoy.bootcamp_microservices.enums.CustomerTypeEnum` from String "PERSONAL1": not one of the values accepted for Enum class: [PERSONAL, EMPRESARIAL]<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 21] (through reference chain: com.skoy.bootcamp_microservices.dto.CustomerDTO["customerType"])]
+2025-02-26 01:17:35 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 6064 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 01:17:35 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 01:17:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 01:17:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 01:17:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 01:17:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 01:17:36 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 01:17:36 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 01:17:36 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 01:17:36 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 01:17:36 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 235 ms
+2025-02-26 01:17:36 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 01:17:36 [cluster-ClusterId{value='67beb20086d43e7cd15520cf', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:104}] to localhost:27017
+2025-02-26 01:17:36 [cluster-rtt-ClusterId{value='67beb20086d43e7cd15520cf', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:105}] to localhost:27017
+2025-02-26 01:17:36 [cluster-ClusterId{value='67beb20086d43e7cd15520cf', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1640400}
+2025-02-26 01:17:36 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 01:17:36 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 01:17:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 01:17:36 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.413 seconds (JVM running for 44177.642)
+2025-02-26 01:17:36 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 01:19:56 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 01:19:56 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 01:19:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-26 01:19:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-26 01:19:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 01:19:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 01:19:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 166 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 01:19:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 01:19:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 01:19:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 01:19:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 01:19:57 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 01:19:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1116 ms
+2025-02-26 01:19:57 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 01:19:57 [cluster-ClusterId{value='67beb28d5c8259362896dff5', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:106}] to localhost:27017
+2025-02-26 01:19:57 [cluster-rtt-ClusterId{value='67beb28d5c8259362896dff5', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:107}] to localhost:27017
+2025-02-26 01:19:57 [cluster-ClusterId{value='67beb28d5c8259362896dff5', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21558700}
+2025-02-26 01:19:57 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 01:19:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 01:19:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 01:19:57 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 2.13 seconds (JVM running for 2.687)
+2025-02-26 01:20:02 [http-nio-9001-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-26 01:20:02 [http-nio-9001-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-26 01:20:02 [http-nio-9001-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-02-26 01:20:18 [http-nio-9001-exec-3] INFO  c.s.b.controller.CustomerController - Fetching all customers
+2025-02-26 01:20:18 [Thread-15] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:108}] to localhost:27017
+2025-02-26 01:20:18 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 01:20:18 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 01:20:18 [Thread-15] INFO  c.s.b.controller.CustomerController - All customers fetched successfully.
+2025-02-26 01:20:24 [http-nio-9001-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.skoy.bootcamp_microservices.enums.DocumentTypeEnum` from String "DNI1": not one of the values accepted for Enum class: [RUC, DNI]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.skoy.bootcamp_microservices.enums.DocumentTypeEnum` from String "DNI1": not one of the values accepted for Enum class: [RUC, DNI]<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 21] (through reference chain: com.skoy.bootcamp_microservices.dto.CustomerDTO["documentType"])]
+2025-02-26 01:21:19 [http-nio-9001-exec-7] INFO  c.s.b.controller.CustomerController - Creating new customer: CustomerDTO(id=null, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:21:19 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer created successfully: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:21:22 [http-nio-9001-exec-9] INFO  c.s.b.controller.CustomerController - Fetching all customers
+2025-02-26 01:21:22 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 01:21:22 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 01:21:22 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:21:22 [Thread-15] INFO  c.s.b.controller.CustomerController - All customers fetched successfully.
+2025-02-26 01:24:20 [http-nio-9001-exec-3] INFO  c.s.b.controller.CustomerController - Fetching all customers
+2025-02-26 01:24:20 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 01:24:20 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 01:24:20 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:24:20 [Thread-16] INFO  c.s.b.controller.CustomerController - All customers fetched successfully.
+2025-02-26 01:25:17 [http-nio-9001-exec-5] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 01:25:17 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:35:44 [http-nio-9001-exec-1] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 01:35:44 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:36:09 [http-nio-9001-exec-3] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 01:36:09 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:37:04 [http-nio-9001-exec-5] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 01:37:04 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:42:30 [http-nio-9001-exec-8] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 01:42:30 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:50:46 [http-nio-9001-exec-1] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 01:50:46 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 01:51:01 [http-nio-9001-exec-4] INFO  c.s.b.controller.CustomerController - Fetching all customers
+2025-02-26 01:51:01 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 01:51:01 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 01:51:01 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:51:01 [Thread-15] INFO  c.s.b.controller.CustomerController - All customers fetched successfully.
+2025-02-26 01:51:19 [http-nio-9001-exec-7] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 01:51:19 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 01:51:48 [http-nio-9001-exec-9] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 01:51:48 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 02:13:27 [http-nio-9001-exec-3] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 02:13:27 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 12:42:34 [http-nio-9001-exec-6] INFO  c.s.b.controller.CustomerController - Fetching all customers
+2025-02-26 12:42:34 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 12:42:34 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 12:42:34 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 12:42:34 [Thread-15] INFO  c.s.b.controller.CustomerController - All customers fetched successfully.
+2025-02-26 12:43:07 [http-nio-9001-exec-9] INFO  c.s.b.controller.CustomerController - Fetching all customers
+2025-02-26 12:43:07 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 12:43:07 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 12:43:07 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 12:43:07 [Thread-16] INFO  c.s.b.controller.CustomerController - All customers fetched successfully.
+2025-02-26 12:43:23 [http-nio-9001-exec-1] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 12:43:23 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 12:49:59 [http-nio-9001-exec-5] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 12:49:59 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 12:50:17 [http-nio-9001-exec-6] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67beb2df5c8259362896dff6
+2025-02-26 12:50:17 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 12:56:20 [http-nio-9001-exec-10] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25_
+2025-02-26 12:59:55 [http-nio-9001-exec-3] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25_
+2025-02-26 13:00:36 [http-nio-9001-exec-5] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25_
+2025-02-26 13:19:52 [http-nio-9001-exec-8] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 13:19:52 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 13:21:40 [http-nio-9001-exec-1] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 13:21:40 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 13:22:04 [http-nio-9001-exec-3] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 13:22:04 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 13:25:09 [http-nio-9001-exec-7] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 13:25:09 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 13:28:20 [http-nio-9001-exec-9] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 13:28:20 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 13:30:34 [http-nio-9001-exec-2] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 13:30:34 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 15:39:49 [http-nio-9001-exec-5] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 15:39:49 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 15:42:33 [http-nio-9001-exec-8] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 15:42:33 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 15:45:18 [http-nio-9001-exec-1] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 15:45:18 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 16:04:21 [http-nio-9001-exec-5] INFO  c.s.b.controller.CustomerController - Fetching all customers
+2025-02-26 16:04:21 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 16:04:21 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 16:04:21 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-26 16:04:21 [Thread-15] INFO  c.s.b.controller.CustomerController - All customers fetched successfully.
+2025-02-26 16:06:29 [http-nio-9001-exec-9] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 16:06:29 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 16:06:38 [http-nio-9001-exec-1] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25_
+2025-02-26 16:06:47 [http-nio-9001-exec-3] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 16:06:47 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 16:19:18 [http-nio-9001-exec-7] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67be562286d43e7cd15520ce
+2025-02-26 16:19:18 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 16:28:25 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:28:25 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:28:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:28:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:28:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:28:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:28:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:28:25 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:28:25 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:28:25 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:28:25 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 452 ms
+2025-02-26 16:28:25 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:28:25 [cluster-rtt-ClusterId{value='67bf87795c8259362896dff7', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:252}] to localhost:27017
+2025-02-26 16:28:25 [cluster-ClusterId{value='67bf87795c8259362896dff7', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:253}] to localhost:27017
+2025-02-26 16:28:25 [cluster-ClusterId{value='67bf87795c8259362896dff7', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1416300}
+2025-02-26 16:28:25 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:28:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:28:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:28:25 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.855 seconds (JVM running for 54510.693)
+2025-02-26 16:28:25 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:29:57 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:29:57 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:29:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:29:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:29:57 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:29:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:29:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:29:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:29:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:29:57 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:29:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 231 ms
+2025-02-26 16:29:57 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:29:57 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:29:57 [cluster-rtt-ClusterId{value='67bf87d55c8259362896dff8', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:254}] to localhost:27017
+2025-02-26 16:29:57 [cluster-ClusterId{value='67bf87d55c8259362896dff8', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:255}] to localhost:27017
+2025-02-26 16:29:57 [cluster-ClusterId{value='67bf87d55c8259362896dff8', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12220100}
+2025-02-26 16:29:58 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:29:58 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:29:58 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.376 seconds (JVM running for 54602.898)
+2025-02-26 16:29:58 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:29:59 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:29:59 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:29:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:29:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:29:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:29:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:29:59 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:29:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:29:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:29:59 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:29:59 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 149 ms
+2025-02-26 16:29:59 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:29:59 [cluster-ClusterId{value='67bf87d75c8259362896dff9', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:256}] to localhost:27017
+2025-02-26 16:29:59 [cluster-ClusterId{value='67bf87d75c8259362896dff9', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1678700}
+2025-02-26 16:29:59 [cluster-rtt-ClusterId{value='67bf87d75c8259362896dff9', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:9, serverValue:257}] to localhost:27017
+2025-02-26 16:29:59 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:29:59 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:29:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:29:59 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.256 seconds (JVM running for 54604.657)
+2025-02-26 16:29:59 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:30:04 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:30:04 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:30:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:30:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:30:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:30:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:30:04 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:30:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:30:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:30:04 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:30:04 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 219 ms
+2025-02-26 16:30:04 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:30:04 [cluster-rtt-ClusterId{value='67bf87dc5c8259362896dffa', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:11, serverValue:259}] to localhost:27017
+2025-02-26 16:30:04 [cluster-ClusterId{value='67bf87dc5c8259362896dffa', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:10, serverValue:258}] to localhost:27017
+2025-02-26 16:30:04 [cluster-ClusterId{value='67bf87dc5c8259362896dffa', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2110800}
+2025-02-26 16:30:04 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:30:04 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:30:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:30:04 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.353 seconds (JVM running for 54609.577)
+2025-02-26 16:30:04 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:30:25 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:30:25 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:30:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:30:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:30:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:30:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:30:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:30:25 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:30:25 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:30:25 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:30:25 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 124 ms
+2025-02-26 16:30:25 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:30:25 [cluster-ClusterId{value='67bf87f15c8259362896dffb', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:12, serverValue:260}] to localhost:27017
+2025-02-26 16:30:25 [cluster-ClusterId{value='67bf87f15c8259362896dffb', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1127500}
+2025-02-26 16:30:25 [cluster-rtt-ClusterId{value='67bf87f15c8259362896dffb', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:13, serverValue:261}] to localhost:27017
+2025-02-26 16:30:25 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:30:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:30:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:30:25 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.221 seconds (JVM running for 54630.516)
+2025-02-26 16:30:25 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:31:11 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:31:11 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:31:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:31:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:31:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:31:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:31:11 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:31:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:31:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:31:11 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:31:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 216 ms
+2025-02-26 16:31:11 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:31:11 [cluster-ClusterId{value='67bf881f5c8259362896dffc', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:14, serverValue:263}] to localhost:27017
+2025-02-26 16:31:11 [cluster-rtt-ClusterId{value='67bf881f5c8259362896dffc', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:15, serverValue:262}] to localhost:27017
+2025-02-26 16:31:12 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:31:12 [cluster-ClusterId{value='67bf881f5c8259362896dffc', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1874700}
+2025-02-26 16:31:12 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:31:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:31:12 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.36 seconds (JVM running for 54676.956)
+2025-02-26 16:31:12 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:32:48 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:32:48 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:32:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:32:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:32:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:32:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:32:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:32:48 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:32:48 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:32:48 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:32:48 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 121 ms
+2025-02-26 16:32:48 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:32:48 [cluster-rtt-ClusterId{value='67bf88805c8259362896dffd', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:17, serverValue:264}] to localhost:27017
+2025-02-26 16:32:48 [cluster-ClusterId{value='67bf88805c8259362896dffd', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:16, serverValue:265}] to localhost:27017
+2025-02-26 16:32:48 [cluster-ClusterId{value='67bf88805c8259362896dffd', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1223600}
+2025-02-26 16:32:48 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:32:49 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:32:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:32:49 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.209 seconds (JVM running for 54773.897)
+2025-02-26 16:32:49 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:32:53 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:32:53 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:32:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:32:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:32:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:32:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:32:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:32:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:32:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:32:53 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:32:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 178 ms
+2025-02-26 16:32:53 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:32:53 [cluster-rtt-ClusterId{value='67bf88855c8259362896dffe', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:18, serverValue:266}] to localhost:27017
+2025-02-26 16:32:53 [cluster-ClusterId{value='67bf88855c8259362896dffe', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:267}] to localhost:27017
+2025-02-26 16:32:53 [cluster-ClusterId{value='67bf88855c8259362896dffe', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1547000}
+2025-02-26 16:32:53 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:32:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:32:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:32:53 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.304 seconds (JVM running for 54778.756)
+2025-02-26 16:32:53 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:32:55 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:32:55 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:32:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:32:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:32:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:32:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:32:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:32:55 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:32:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:32:55 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:32:55 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 143 ms
+2025-02-26 16:32:55 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:32:55 [cluster-rtt-ClusterId{value='67bf88875c8259362896dfff', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:21, serverValue:268}] to localhost:27017
+2025-02-26 16:32:55 [cluster-ClusterId{value='67bf88875c8259362896dfff', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:269}] to localhost:27017
+2025-02-26 16:32:55 [cluster-ClusterId{value='67bf88875c8259362896dfff', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1185900}
+2025-02-26 16:32:55 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:32:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:32:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:32:55 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.231 seconds (JVM running for 54780.487)
+2025-02-26 16:32:55 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:33:32 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:33:32 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:33:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:33:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:33:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:33:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:33:32 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:33:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:33:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:33:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:33:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 230 ms
+2025-02-26 16:33:32 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:33:32 [cluster-ClusterId{value='67bf88ac5c8259362896e000', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:22, serverValue:270}] to localhost:27017
+2025-02-26 16:33:32 [cluster-rtt-ClusterId{value='67bf88ac5c8259362896e000', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:23, serverValue:271}] to localhost:27017
+2025-02-26 16:33:32 [cluster-ClusterId{value='67bf88ac5c8259362896e000', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1497200}
+2025-02-26 16:33:32 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:33:32 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:33:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:33:32 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.365 seconds (JVM running for 54817.774)
+2025-02-26 16:33:32 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 16:33:34 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 30760 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-26 16:33:34 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-26 16:33:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-26 16:33:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-26 16:33:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-26 16:33:34 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-26 16:33:34 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:33:34 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-26 16:33:34 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-26 16:33:34 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-26 16:33:34 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 236 ms
+2025-02-26 16:33:34 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-26 16:33:34 [cluster-rtt-ClusterId{value='67bf88ae5c8259362896e001', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:25, serverValue:273}] to localhost:27017
+2025-02-26 16:33:34 [cluster-ClusterId{value='67bf88ae5c8259362896e001', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:24, serverValue:272}] to localhost:27017
+2025-02-26 16:33:34 [cluster-ClusterId{value='67bf88ae5c8259362896e001', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2243300}
+2025-02-26 16:33:34 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-26 16:33:34 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-26 16:33:34 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-26 16:33:34 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 0.387 seconds (JVM running for 54819.689)
+2025-02-26 16:33:34 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-02-26 17:04:31 [http-nio-9001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-26 17:04:31 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-26 17:04:31 [http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-26 17:04:31 [http-nio-9001-exec-1] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67be562286d43e7cd15520ce
+2025-02-26 17:04:31 [Thread-15] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:26, serverValue:299}] to localhost:27017
+2025-02-26 17:04:31 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-26 17:05:18 [http-nio-9001-exec-3] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 17:05:18 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 18:29:49 [http-nio-9001-exec-6] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 18:29:49 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 18:36:20 [http-nio-9001-exec-9] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 18:36:20 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 18:38:34 [http-nio-9001-exec-2] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 18:38:35 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 18:54:24 [http-nio-9001-exec-5] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-26 18:54:24 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-26 23:52:22 [cluster-ClusterId{value='67bf88ae5c8259362896e001', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (InterruptedAtShutdown): 'interrupted at shutdown' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "interrupted at shutdown", "code": 11600, "codeName": "InterruptedAtShutdown"}
+	at com.mongodb.internal.connection.ProtocolHelper.createSpecialException(ProtocolHelper.java:266)
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:194)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:418)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-02-26 23:52:36 [cluster-ClusterId{value='67bf88ae5c8259362896e001', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.AsynchronousSocketChannelStream$OpenCompletionHandler.failed(AsynchronousSocketChannelStream.java:124)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:131)
+	at java.base/sun.nio.ch.Invoker.invokeDirect(Invoker.java:160)
+	at java.base/sun.nio.ch.Invoker.invoke(Invoker.java:188)
+	at java.base/sun.nio.ch.Invoker.invoke(Invoker.java:300)
+	at java.base/sun.nio.ch.WindowsAsynchronousSocketChannelImpl$ConnectTask.failed(WindowsAsynchronousSocketChannelImpl.java:308)
+	at java.base/sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:389)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: The remote computer refused the network connection
+	at java.base/sun.nio.ch.Iocp.translateErrorToIOException(Iocp.java:299)
+	... 5 common frames omitted
+2025-02-27 16:35:05 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 23432 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-27 16:35:05 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 16:35:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 16:35:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 16:35:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-27 16:35:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-27 16:35:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-27 16:35:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-27 16:35:06 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-27 16:35:06 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-27 16:35:06 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-27 16:35:06 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-27 16:35:06 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1202 ms
+2025-02-27 16:35:06 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-27 16:35:06 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-02-27 16:35:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-27 16:35:07 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9001 is already in use
+2025-02-27 16:35:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9001"]
+2025-02-27 16:35:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-02-27 16:35:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9001"]
+2025-02-27 16:35:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9001"]
+2025-02-27 16:35:07 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-02-27 16:35:07 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9001 or configure this application to listen on another port.
+
+2025-02-27 16:38:50 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Starting BootcampMicroservicesApplication using Java 17.0.2 on DESKTOP-9I11CUN with PID 21652 (D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service\target\classes started by coyaks in D:\WORK\NTT_DATA\entregableFinal\MICROSERVICES\microservice_customer_service)
+2025-02-27 16:38:50 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-02-27 16:38:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-02-27 16:38:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-02-27 16:38:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-02-27 16:38:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2025-02-27 16:38:51 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135 ms. Found 1 Reactive MongoDB repository interfaces.
+2025-02-27 16:38:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+2025-02-27 16:38:51 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+2025-02-27 16:38:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-02-27 16:38:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-02-27 16:38:52 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-02-27 16:38:52 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1298 ms
+2025-02-27 16:38:52 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-02-27 16:38:52 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-02-27 16:38:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+2025-02-27 16:38:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+2025-02-27 16:38:52 [restartedMain] INFO  c.s.b.BootcampMicroservicesApplication - Started BootcampMicroservicesApplication in 2.516 seconds (JVM running for 3.422)
+2025-02-27 16:38:56 [cluster-ClusterId{value='67c0db6cf4b474126dc9a863', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.AsynchronousSocketChannelStream$OpenCompletionHandler.failed(AsynchronousSocketChannelStream.java:124)
+	at java.base/sun.nio.ch.Invoker.invokeUnchecked(Invoker.java:131)
+	at java.base/sun.nio.ch.Invoker.invokeDirect(Invoker.java:160)
+	at java.base/sun.nio.ch.Invoker.invoke(Invoker.java:188)
+	at java.base/sun.nio.ch.Invoker.invoke(Invoker.java:300)
+	at java.base/sun.nio.ch.WindowsAsynchronousSocketChannelImpl$ConnectTask.failed(WindowsAsynchronousSocketChannelImpl.java:308)
+	at java.base/sun.nio.ch.Iocp$EventHandlerTask.run(Iocp.java:389)
+	at java.base/sun.nio.ch.AsynchronousChannelGroupImpl$1.run(AsynchronousChannelGroupImpl.java:113)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.IOException: The remote computer refused the network connection
+	at java.base/sun.nio.ch.Iocp.translateErrorToIOException(Iocp.java:299)
+	... 5 common frames omitted
+2025-02-27 16:40:26 [http-nio-9001-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-27 16:40:26 [http-nio-9001-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-02-27 16:40:26 [http-nio-9001-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-02-27 16:40:26 [http-nio-9001-exec-4] INFO  c.s.b.controller.CustomerController - Fetching all customers
+2025-02-27 16:40:26 [http-nio-9001-exec-4] INFO  org.mongodb.driver.cluster - No server chosen by com.mongodb.reactivestreams.client.internal.ClientSessionHelper$$Lambda$1158/0x000000080118fd68@7f5aa879 from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.io.IOException: The remote computer refused the network connection}}]}. Waiting for 30000 ms before timing out
+2025-02-27 16:40:40 [cluster-ClusterId{value='67c0db6cf4b474126dc9a863', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:19, serverValue:1}] to localhost:27017
+2025-02-27 16:40:40 [cluster-ClusterId{value='67c0db6cf4b474126dc9a863', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16653200}
+2025-02-27 16:40:40 [Thread-16] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:20, serverValue:2}] to localhost:27017
+2025-02-27 16:40:40 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-27 16:40:40 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67be562286d43e7cd15520ce, customerType=PERSONAL, name=Felix, surname=Perez, documentType=DNI, documentNumber=88888888, email=felix@example.com, phone=999999999)
+2025-02-27 16:40:40 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67beb2df5c8259362896dff6, customerType=EMPRESARIAL, name=INNOVACODERS SOLUCIONES TECNOLOGICAS, surname=, documentType=RUC, documentNumber=20612226599, email=innovacoders@example.com, phone=999999999)
+2025-02-27 16:40:40 [Thread-16] INFO  c.s.b.controller.CustomerController - All customers fetched successfully.
+2025-02-27 16:40:44 [cluster-rtt-ClusterId{value='67c0db6cf4b474126dc9a863', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:21, serverValue:7}] to localhost:27017
+2025-02-27 17:21:32 [http-nio-9001-exec-6] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25_
+2025-02-27 17:22:41 [http-nio-9001-exec-9] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-27 17:22:41 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-27 17:48:52 [http-nio-9001-exec-4] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-27 17:48:52 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-27 17:49:26 [http-nio-9001-exec-2] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-27 17:49:26 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-27 17:50:04 [http-nio-9001-exec-6] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-27 17:50:04 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-27 17:57:28 [http-nio-9001-exec-9] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-27 17:57:28 [Thread-16] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)
+2025-02-27 17:57:34 [http-nio-9001-exec-1] INFO  c.s.b.controller.CustomerController - Fetching customer with ID: 67bc5049652bf702f7552f25
+2025-02-27 17:57:34 [Thread-15] INFO  c.s.b.controller.CustomerController - Customer found: CustomerDTO(id=67bc5049652bf702f7552f25, customerType=PERSONAL, name=Coyaks, surname=Perez, documentType=DNI, documentNumber=12345678, email=coyaks@example.com, phone=999999999)

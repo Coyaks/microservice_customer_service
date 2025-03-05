@@ -5,6 +5,7 @@ import com.skoy.bootcamp_microservices.enums.CustomerTypeEnum;
 import com.skoy.bootcamp_microservices.enums.DocumentTypeEnum;
 import com.skoy.bootcamp_microservices.service.ICustomerService;
 import com.skoy.bootcamp_microservices.utils.ApiResponse;
+import com.skoy.bootcamp_microservices.utils.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,9 +37,9 @@ public class CustomerController {
         return customerService.findById(id)
                 .map(customer -> {
                     logger.info("Customer found: {}", customer);
-                    return new ApiResponse<>("Cliente encontrado", customer, 200);
+                    return new ApiResponse<>("Cliente encontrado", customer, Constants.STATUS_OK);
                 })
-                .switchIfEmpty(Mono.just(new ApiResponse<>("Cliente no encontrado", null, 404)))
+                .switchIfEmpty(Mono.just(new ApiResponse<>("Cliente no encontrado", null, Constants.STATUS_E404)))
                 .doOnError(e -> logger.error("Error fetching customer with ID: {}", id, e));
     }
 
@@ -57,10 +58,10 @@ public class CustomerController {
                 .map(createdCustomer -> {
                     if (createdCustomer != null) {
                         logger.info("Customer created successfully: {}", createdCustomer);
-                        return new ApiResponse<>("ok", createdCustomer, 200);
+                        return new ApiResponse<>("ok", createdCustomer, Constants.STATUS_OK);
                     } else {
                         logger.error("Error creating customer");
-                        return new ApiResponse<>("error", null, 500);
+                        return new ApiResponse<>("error", null, Constants.STATUS_E500);
                     }
                 });
     }
@@ -72,9 +73,9 @@ public class CustomerController {
                 .flatMap(existingCustomer -> customerService.update(id, customerDto)
                         .map(updatedCustomer -> {
                             logger.info("Customer updated successfully: {}", updatedCustomer);
-                            return new ApiResponse<>("Actualizado correctamente", updatedCustomer, 200);
+                            return new ApiResponse<>("Actualizado correctamente", updatedCustomer, Constants.STATUS_OK);
                         }))
-                .switchIfEmpty(Mono.just(new ApiResponse<>("ID no encontrado", null, 404)))
+                .switchIfEmpty(Mono.just(new ApiResponse<>("ID no encontrado", null, Constants.STATUS_E404)))
                 .doOnError(e -> logger.error("Error updating customer with ID: {}", id, e));
     }
 
@@ -83,11 +84,11 @@ public class CustomerController {
         logger.info("Deleting customer with ID: {}", id);
         return customerService.findById(id)
                 .flatMap(existingCustomer -> customerService.delete(id)
-                        .then(Mono.just(new ApiResponse<Void>("Eliminado correctamente", null, 200))))
-                .switchIfEmpty(Mono.just(new ApiResponse<Void>("ID no encontrado", null, 404)))
+                        .then(Mono.just(new ApiResponse<Void>("Eliminado correctamente", null, Constants.STATUS_OK))))
+                .switchIfEmpty(Mono.just(new ApiResponse<Void>("ID no encontrado", null, Constants.STATUS_E404)))
                 .onErrorResume(e -> {
                     logger.error("Error deleting customer with ID: {}", id, e);
-                    return Mono.just(new ApiResponse<Void>("Error al eliminar", null, 500));
+                    return Mono.just(new ApiResponse<Void>("Error al eliminar", null, Constants.STATUS_E500));
                 });
     }
 

@@ -20,7 +20,8 @@ public class CustomerService implements ICustomerService {
     @Override
     public Mono<CustomerDTO> create(CustomerDTO customerDto) {
         Customer customer = CustomerMapper.toEntity(customerDto);
-        return customerRepository.save(customer).map(CustomerMapper::toDto);
+        return customerRepository.save(customer)
+                .map(CustomerMapper::toDto);
     }
 
     @Override

@@ -11,7 +11,7 @@
  Target Server Version : 80004 (8.0.4)
  File Encoding         : 65001
 
- Date: 05/03/2025 01:45:42
+ Date: 05/03/2025 08:08:11
 */
 
 
@@ -61,5 +61,57 @@ db.getCollection("customers").insert([ {
     phone: "999999999",
     createdAt: ISODate("2025-02-26T06:21:19.568Z"),
     updatedAt: ISODate("2025-02-26T06:21:19.568Z"),
+    _class: "com.skoy.bootcamp_microservices.model.Customer"
+} ]);
+db.getCollection("customers").insert([ {
+    _id: ObjectId("67c80f32d082587cc57705a6"),
+    customerType: "PERSONAL_VIP",
+    name: "Felix",
+    surname: "Perez",
+    documentType: "DNI",
+    documentNumber: "78999999",
+    email: "felix@example.com",
+    phone: "999999999",
+    createdAt: ISODate("2025-03-05T08:45:38.064Z"),
+    updatedAt: ISODate("2025-03-05T08:45:38.064Z"),
+    _class: "com.skoy.bootcamp_microservices.model.Customer"
+} ]);
+db.getCollection("customers").insert([ {
+    _id: ObjectId("67c8191ad082587cc57705a7"),
+    customerType: "EMPRESARIAL_PYME",
+    name: "INNOVACODERS PYME",
+    surname: "",
+    documentType: "RUC",
+    documentNumber: "20612226599",
+    email: "innovacoders@example.com",
+    phone: "999999999",
+    createdAt: ISODate("2025-03-05T09:27:54.335Z"),
+    updatedAt: ISODate("2025-03-05T09:27:54.335Z"),
+    _class: "com.skoy.bootcamp_microservices.model.Customer"
+} ]);
+db.getCollection("customers").insert([ {
+    _id: ObjectId("67c82a25d082587cc57705a8"),
+    customerType: "PERSONAL",
+    name: "CoyaksV2",
+    surname: "Perez",
+    documentType: "DNI",
+    documentNumber: "88888888",
+    email: "coyaksv2@example.com",
+    phone: "999999999",
+    createdAt: ISODate("2025-03-05T10:40:37.594Z"),
+    updatedAt: ISODate("2025-03-05T10:40:37.594Z"),
+    _class: "com.skoy.bootcamp_microservices.model.Customer"
+} ]);
+db.getCollection("customers").insert([ {
+    _id: ObjectId("67c83654d082587cc57705ab"),
+    customerType: "PERSONAL",
+    name: "CoyaksV3",
+    surname: "Perez",
+    documentType: "DNI",
+    documentNumber: "88888888",
+    email: "coyaksv2@example.com",
+    phone: "999999999",
+    createdAt: ISODate("2025-03-05T11:32:36.682Z"),
+    updatedAt: ISODate("2025-03-05T11:32:36.682Z"),
     _class: "com.skoy.bootcamp_microservices.model.Customer"
 } ]);

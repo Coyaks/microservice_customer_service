@@ -2,7 +2,9 @@ package com.skoy.bootcamp_microservices.dto;
 
 import com.skoy.bootcamp_microservices.enums.CustomerTypeEnum;
 import com.skoy.bootcamp_microservices.enums.DocumentTypeEnum;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor

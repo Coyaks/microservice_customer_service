@@ -16,17 +16,17 @@ public class OpenApiConfig {
         return new OpenAPI()
                 .info(new Info()
                         .title("API de Gestión de Clientes")
-                        .description("API para la gestión de clientes en el bootcamp de microservicios")
+                        .description("API para el bootcamp de microservicios")
                         .version("1.0.0")
                         .contact(new Contact()
                                 .name("Soporte")
-                                .email("soporte@skoy.com")
-                                .url("https://www.skoy.com"))
+                                .email("soporte@skoy.pe")
+                                .url("https://www.skoy.pe"))
                         .license(new License()
                                 .name("Apache 2.0")
                                 .url("http://springdoc.org")))
                 .externalDocs(new ExternalDocumentation()
                         .description("Documentación del Proyecto")
-                        .url("https://github.com/skoy/bootcamp_microservices"));
+                        .url("https://github.com/Coyaks/microservice_customer_service.git"));
     }
 }

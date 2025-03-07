@@ -1,6 +1,6 @@
 git status
 git add .
-git commit -m "complete project 2"
+git commit -m "Add docker mongoDB"
 git push
 git log -2
 

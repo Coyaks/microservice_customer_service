@@ -1,9 +1,11 @@
 server:
   port: 9001
+  #port: 8080 # port default
 
 spring:
   application:
-    name: customer_service
+    #name: customer_service
+    name: customer-service
   data:
     mongodb:
       uri: mongodb://admin:password@localhost:27001/microservice_customer_service?authSource=admin
@@ -14,5 +16,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
   instance:
     preferIpAddress: true
